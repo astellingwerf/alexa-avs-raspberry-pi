@@ -377,15 +377,11 @@ Change directories to \<REFERENCE_IMPLEMENTATION>/samples/javaclient.
 
 Note that **countryName** must be two characters. If it is not two characters, certificate creation will fail. 
 
-**Step 3**: Make the certificate generation script executable by typing:
-
-	chmod +x generate.sh
-
-**Step 4**: Run the certificate generation script:
+**Step 3**: Run the certificate generation script:
 	
 	./generate.sh
 	
-**Step 5**: You will be prompted for some information:
+**Step 4**: You will be prompted for some information:
 
 1. When prompted for a product ID, enter **my_device**
 2. When prompted for a serial number, enter **123456**
@@ -393,7 +389,7 @@ Note that **countryName** must be two characters. If it is not two characters, c
 	1. Password: **talktome** (you can even leave it blank)
 
 
-**Step 6: Edit the configuration file for the Node.js server**  
+**Step 5: Edit the configuration file for the Node.js server**  
 
 The configuration file is located at: 
 
@@ -407,7 +403,7 @@ Make the following changes:
 
 **IMP**: **Do not** use **~** to denote the home directory. Use the absolute path instead. So, instead of ~/documents/samples, use /home/pi/documents/samples.
 
-**Step 7: Edit the configuration file for the Java client** 
+**Step 6: Edit the configuration file for the Java client** 
 
 The configuration file is located at: 
 
@@ -537,10 +533,6 @@ Open a new terminal window/tab (SHIFT+CTRL+TAB in Raspbian)
 
 
 **Upgrade your Java version**
-
-Make the script executable by typing:
-
-	chmod +x generate.sh
 
 Run the installation script:
 	
